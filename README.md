@@ -1,7 +1,5 @@
 # recruiting-system
 
-----
+### Backend
 
-- Backend
-
-- Frontend
+### Frontend
