@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head></head>
+<body>
+    <h2>Thank you for your order, your payment is being processing</h2>
+    <h4>You have ordered:</h4>
+    <table>
+    <tr>
+        <th>Name</th>
+        <th>Time</th>
+     </tr>
+    <tr th:each="con: ${ordermenu}">
+        <td th:text=${con.menu.name} />
+        <td th:text=${con.menu.price} />
+    </tr>
+    </table>
+    <p>TotalPrice: <span th:text="${totalprice}"></span></p>
+    <p>Thank you and hope to see you soon</p>
+    
+</body>
+</html>
